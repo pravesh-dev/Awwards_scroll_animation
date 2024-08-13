@@ -89,8 +89,26 @@ function startAnimation() {
       }
   }
 
-  tl.to(frames, updateFrame(400), 'a')
-    .to('.animate1', {opacity: 0, ease: 'linear',}, 'a')
+  tl.to(frames, updateFrame(100), 'first')
+    .to('.animate1', {opacity: 0, ease: 'linear',}, 'first')
+    
+    .to(frames, updateFrame(200), 'second')
+    .to('.animate2', {opacity: 1, ease: 'linear',}, 'second')
+
+    .to(frames, updateFrame(300), 'third')
+    .to('.animate2', {opacity: 1, ease: 'linear',}, 'third')
+
+    .to(frames, updateFrame(400), 'fourth')
+    .to('.animate2', {opacity: 0, ease: 'linear',}, 'fourth')
+
+    .to(frames, updateFrame(500), 'fifth')
+    .to('.animate3', {opacity: 1, ease: 'linear',}, 'fifth')
+
+    .to(frames, updateFrame(600), 'sixth')
+    .to('.animate3', {opacity: 1, ease: 'linear',}, 'sixth')
+
+    .to(frames, updateFrame(700), 'seventh')
+    .to('.animate3', {opacity: 0, ease: 'linear',}, 'seventh')
 }
 
 window.addEventListener("resize", () => {
