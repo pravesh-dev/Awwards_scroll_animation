@@ -1,3 +1,20 @@
+function smoothScroll() {
+  const lenis = new Lenis();
+
+  lenis.on("scroll", (e) => {
+    // console.log(e);
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+}
+smoothScroll();
+
+
 const canvas = document.querySelector("#my_canvas");
 const context = canvas.getContext("2d");
 
@@ -70,8 +87,8 @@ function startAnimation() {
   });
 }
 
-window.addEventListener('resize', ()=>{
-    loadImages(Math.floor(frames.currentIndex));
-})
+window.addEventListener("resize", () => {
+  loadImages(Math.floor(frames.currentIndex));
+});
 
 preloadImages();
