@@ -19,7 +19,7 @@ function preloadImages() {
              imageLoaded++;
              if(imageLoaded === frames.maxIndex){
                 loadImages(frames.currentIndex);
-                // startAnimation();
+                startAnimation();
              }
         }
         images.push(img);
@@ -50,6 +50,24 @@ function loadImages(index) {
 
         frames.currentIndex = index;
     }
+}
+
+function startAnimation(){
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.parent',
+        start: 'top top',
+        end: 'bottom bottom',
+        scrub: 4,
+    }
+});
+
+tl.to(frames, {
+    currentIndex: frames.maxIndex,
+    onUpdate: function () {
+        loadImages(Math.floor(frames.currentIndex));
+    }
+})
 }
 
 preloadImages();
