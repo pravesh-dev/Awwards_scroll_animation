@@ -79,12 +79,18 @@ function startAnimation() {
     },
   });
 
-  tl.to(frames, {
-    currentIndex: frames.maxIndex,
-    onUpdate: function () {
-      loadImages(Math.floor(frames.currentIndex));
-    },
-  });
+  function updateFrame(index) {
+    return {
+        currentIndex: index,
+        ease: 'linear',
+        onUpdate: function () {
+          loadImages(Math.floor(frames.currentIndex));
+        },
+      }
+  }
+
+  tl.to(frames, updateFrame(400), 'a')
+    .to('.animate1', {opacity: 0, ease: 'linear',}, 'a')
 }
 
 window.addEventListener("resize", () => {
