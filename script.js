@@ -95,8 +95,8 @@ function startAnimation() {
     .to(frames, updateFrame(200), 'second')
     .to('.animate2', {opacity: 1, ease: 'linear',}, 'second')
 
-    // .to(frames, updateFrame(300), 'third')
-    // .to('.animate2', {opacity: 1, ease: 'linear',}, 'third')
+    .to(frames, updateFrame(300), 'third')
+    .to('.animate2', {opacity: 1, ease: 'linear',}, 'third')
 
     .to(frames, updateFrame(400), 'fourth')
     .to('.animate2', {opacity: 0, ease: 'linear',}, 'fourth')
