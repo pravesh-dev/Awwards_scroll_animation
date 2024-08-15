@@ -89,44 +89,47 @@ function startAnimation() {
       }
   }
 
-  tl.to(frames, updateFrame(100), 'first')
+  tl.to(frames, updateFrame(60), 'first')
     .to('.animate1', {opacity: 0, ease: 'linear',}, 'first')
     
-    .to(frames, updateFrame(200), 'second')
+    .to(frames, updateFrame(120), 'second')
     .to('.animate2', {opacity: 1, ease: 'linear',}, 'second')
 
-    .to(frames, updateFrame(300), 'third')
+    .to(frames, updateFrame(180), 'third')
     .to('.animate2', {opacity: 1, ease: 'linear',}, 'third')
 
-    .to(frames, updateFrame(400), 'fourth')
+    .to(frames, updateFrame(240), 'fourth')
     .to('.animate2', {opacity: 0, ease: 'linear',}, 'fourth')
 
-    .to(frames, updateFrame(500), 'fifth')
+    .to(frames, updateFrame(300), 'fifth')
     .to('.animate3', {opacity: 1, ease: 'linear',}, 'fifth')
 
-    .to(frames, updateFrame(600), 'sixth')
+    .to(frames, updateFrame(360), 'sixth')
     .to('.animate3', {opacity: 1, ease: 'linear',}, 'sixth')
 
-    .to(frames, updateFrame(700), 'seventh')
+    .to(frames, updateFrame(420), 'seventh')
     .to('.animate3', {opacity: 0, ease: 'linear',}, 'seventh')
 
-    .to(frames, updateFrame(800), 'eight')
+    .to(frames, updateFrame(480), 'eight')
     .to('.panel', {x: 0, ease: 'expo',}, 'eight')
 
-    .to(frames, updateFrame(900), 'ninth')
+    .to(frames, updateFrame(540), 'ninth')
     .to('.panel', {x: 0, ease: 'expo',}, 'ninth')
 
-    .to(frames, updateFrame(1000), 'tenth')
+    .to(frames, updateFrame(600), 'tenth')
     .to('.panel', {opacity: 0, ease: 'linear',}, 'tenth')
 
-    .to(frames, updateFrame(1100), 'eleventh')
+    .to(frames, updateFrame(660), 'eleventh')
     .to('canvas', {scale: .5, ease: 'linear',}, 'eleventh')
 
-    .to(frames, updateFrame(1200), 'twelve')
+    .to(frames, updateFrame(720), 'twelve')
     .to('.panelism', {opacity: 1, ease: 'expo',}, 'twelve')
 
-    .to(frames, updateFrame(1300), 'twelve')
+    .to(frames, updateFrame(780), 'twelve')
     .to('.panelism span', {width: 200, ease: 'expo',}, 'twelve')
+
+    .to(frames, updateFrame(840), 'thirteen')
+    .to('canvas', {scale: 1, ease: 'linear',}, 'thirteen')
 }
 
 window.addEventListener("resize", () => {
