@@ -121,6 +121,12 @@ function startAnimation() {
 
     .to(frames, updateFrame(1100), 'eleventh')
     .to('canvas', {scale: .5, ease: 'linear',}, 'eleventh')
+
+    .to(frames, updateFrame(1200), 'twelve')
+    .to('.panelism', {opacity: 1, ease: 'expo',}, 'twelve')
+
+    .to(frames, updateFrame(1300), 'twelve')
+    .to('.panelism span', {width: 200, ease: 'expo',}, 'twelve')
 }
 
 window.addEventListener("resize", () => {
