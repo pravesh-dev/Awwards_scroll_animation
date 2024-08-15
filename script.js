@@ -109,6 +109,9 @@ function startAnimation() {
 
     .to(frames, updateFrame(700), 'seventh')
     .to('.animate3', {opacity: 0, ease: 'linear',}, 'seventh')
+
+    .to(frames, updateFrame(800), 'eight')
+    .to('.panel', {x: 0, ease: 'linear',}, 'eight')
 }
 
 window.addEventListener("resize", () => {
