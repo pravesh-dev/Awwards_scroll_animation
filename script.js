@@ -115,6 +115,9 @@ function startAnimation() {
 
     .to(frames, updateFrame(900), 'ninth')
     .to('.panel', {x: 0, ease: 'expo',}, 'ninth')
+
+    .to(frames, updateFrame(1000), 'tenth')
+    .to('.panel', {opacity: 0, ease: 'linear',}, 'tenth')
 }
 
 window.addEventListener("resize", () => {
