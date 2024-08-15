@@ -111,7 +111,10 @@ function startAnimation() {
     .to('.animate3', {opacity: 0, ease: 'linear',}, 'seventh')
 
     .to(frames, updateFrame(800), 'eight')
-    .to('.panel', {x: 0, ease: 'linear',}, 'eight')
+    .to('.panel', {x: 0, ease: 'expo',}, 'eight')
+
+    .to(frames, updateFrame(900), 'ninth')
+    .to('.panel', {x: 0, ease: 'expo',}, 'ninth')
 }
 
 window.addEventListener("resize", () => {
