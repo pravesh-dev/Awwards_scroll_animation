@@ -85,52 +85,52 @@ function startAnimation() {
       }
   }
 
-  tl.to(frames, updateFrame(60), 'first')
+  tl.to(frames, updateFrame(84), 'first')
     .to('.animate1', {opacity: 0, ease: 'linear',}, 'first')
     
-    .to(frames, updateFrame(120), 'second')
+    .to(frames, updateFrame(168), 'second')
     .to('.animate2', {opacity: 1, ease: 'linear',}, 'second')
 
-    .to(frames, updateFrame(180), 'third')
+    .to(frames, updateFrame(252), 'third')
     .to('.animate2', {opacity: 1, ease: 'linear',}, 'third')
 
-    .to(frames, updateFrame(240), 'fourth')
+    .to(frames, updateFrame(336), 'fourth')
     .to('.animate2', {opacity: 0, ease: 'linear',}, 'fourth')
 
-    .to(frames, updateFrame(300), 'fifth')
+    .to(frames, updateFrame(420), 'fifth')
     .to('.animate3', {opacity: 1, ease: 'linear',}, 'fifth')
 
-    .to(frames, updateFrame(360), 'sixth')
+    .to(frames, updateFrame(504), 'sixth')
     .to('.animate3', {opacity: 1, ease: 'linear',}, 'sixth')
 
-    .to(frames, updateFrame(420), 'seventh')
+    .to(frames, updateFrame(588), 'seventh')
     .to('.animate3', {opacity: 0, ease: 'linear',}, 'seventh')
 
-    .to(frames, updateFrame(480), 'eight')
+    .to(frames, updateFrame(672), 'eight')
     .to('.panel', {x: 0, ease: 'expo',}, 'eight')
 
-    .to(frames, updateFrame(540), 'ninth')
+    .to(frames, updateFrame(756), 'ninth')
     .to('.panel', {x: 0, ease: 'expo',}, 'ninth')
 
-    .to(frames, updateFrame(600), 'tenth')
+    .to(frames, updateFrame(840), 'tenth')
     .to('.panel', {opacity: 0, ease: 'linear',}, 'tenth')
 
-    .to(frames, updateFrame(660), 'eleventh')
+    .to(frames, updateFrame(924), 'eleventh')
     .to('canvas', {scale: .5, ease: 'linear',}, 'eleventh')
 
-    .to(frames, updateFrame(720), 'twelve')
+    .to(frames, updateFrame(1008), 'twelve')
     .to('.panelism', {opacity: 1, ease: 'expo',}, 'twelve')
 
-    .to(frames, updateFrame(780), 'twelve')
+    .to(frames, updateFrame(1092), 'twelve')
     .to('.panelism span', {width: 200, ease: 'expo',}, 'twelve')
 
-    .to(frames, updateFrame(840), 'thirteen')
+    .to(frames, updateFrame(1176), 'thirteen')
     .to('canvas', {scale: 1, ease: 'linear',}, 'thirteen')
 
-    .to(frames, updateFrame(900), 'fourteen')
+    .to(frames, updateFrame(1260), 'fourteen')
     .to('.panelism', {scale: 2, ease: 'circ',}, 'fourteen')
 
-    .to(frames, updateFrame(930), 'fifteen')
+    .to(frames, updateFrame(1344), 'fifteen')
     .to('.panelism', {scale: 2, ease: 'circ',}, 'fifteen')
 }
 
