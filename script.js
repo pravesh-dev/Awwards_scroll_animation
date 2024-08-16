@@ -152,16 +152,3 @@ document.querySelectorAll('.headings h3')
     opacity: 0.1
   })
 })
-
-const headings = document.querySelectorAll('.headings h3');
-
-  headings.forEach(heading => {
-    heading.addEventListener('mouseover', () => {
-      headings.forEach(h => h.style.color = 'gray');
-      heading.style.color = 'black';
-    });
-
-    heading.addEventListener('mouseout', () => {
-      headings.forEach(h => h.style.color = 'black');
-    });
-  });
