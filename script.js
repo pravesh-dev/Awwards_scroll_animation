@@ -1,10 +1,6 @@
 function smoothScroll() {
   const lenis = new Lenis();
 
-  lenis.on("scroll", (e) => {
-    // console.log(e);
-  });
-
   function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);
@@ -152,7 +148,6 @@ document.querySelectorAll('.headings h3')
       start: 'top 90%',
       end: 'bottom 20%',
       scrub: 3,
-      markers: true,
     },
     opacity: 0.3
   })
