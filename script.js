@@ -138,8 +138,22 @@ function startAnimation() {
     .to('.panelism', {scale: 2, ease: 'circ',}, 'fifteen')
 }
 
+preloadImages();
+
 window.addEventListener("resize", () => {
   loadImages(Math.floor(frames.currentIndex));
 });
 
-preloadImages();
+document.querySelectorAll('.headings h3')
+.forEach((elm)=>{
+  gsap.from(elm, {
+    scrollTrigger: {
+      trigger: elm,
+      start: 'top 90%',
+      end: 'bottom 20%',
+      scrub: 3,
+      markers: true,
+    },
+    opacity: 0.3
+  })
+})
