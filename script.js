@@ -133,6 +133,9 @@ function startAnimation() {
 
     .to(frames, updateFrame(900), 'fourteen')
     .to('.panelism', {scale: 2, ease: 'circ',}, 'fourteen')
+
+    .to(frames, updateFrame(930), 'fifteen')
+    .to('.panelism', {scale: 2, ease: 'circ',}, 'fifteen')
 }
 
 window.addEventListener("resize", () => {
