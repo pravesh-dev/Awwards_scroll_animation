@@ -130,8 +130,8 @@ function startAnimation() {
     .to(frames, updateFrame(1260), 'fourteen')
     .to('.panelism', {scale: 2, ease: 'circ',}, 'fourteen')
 
-    .to(frames, updateFrame(1344), 'fifteen')
-    .to('.panelism', {scale: 2, ease: 'circ',}, 'fifteen')
+    // .to(frames, updateFrame(1344), 'fifteen')
+    // .to('.panelism', {scale: 2, ease: 'circ',}, 'fifteen')
 }
 
 preloadImages();
