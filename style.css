@@ -1,5 +1,8 @@
 *{
+    margin: 0;
+    padding: 0;
     cursor: default;
+    box-sizing: border-box;
 }
 .headings h3{
     text-transform: capitalize;
