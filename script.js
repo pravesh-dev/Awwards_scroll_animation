@@ -143,9 +143,9 @@ document.querySelectorAll('.headings h3')
     scrollTrigger: {
       trigger: elm,
       start: 'top 90%',
-      end: 'bottom 20%',
+      end: 'bottom 50%',
       scrub: 3,
     },
-    opacity: 0.1
+    opacity: 0.3
   })
 })
