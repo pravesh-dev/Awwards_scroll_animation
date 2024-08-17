@@ -38,11 +38,6 @@ footer div p span{
     color: white;
 }
 
-footer div p span:hover{
-    background-color:white ;
-    color: black;
-}
-
 /* Footer Image Links */
 footer a.github {
     -webkit-transition:color 500ms ease;
@@ -50,29 +45,35 @@ footer a.github {
     -o-transition:color 500ms ease;
     transition: color 500ms ease;
     font-size: 3em;
-    color: rgb(13,38,54);
+    color: #0d2636;
     padding: 10px;
     display:inline-block;
+    ion-icon{
+        cursor: pointer;
+    }
 }
 
-footer a.codepen {
+footer a.instagram {
     -webkit-transition:color 500ms ease;
     -moz-transition:color 500ms ease;
     -o-transition:color 500ms ease;
     transition: color 500ms ease;
     font-size: 3em;
-    color: black;
+    color: #0d2636;
     padding: 10px;
     display:inline-block;
+    ion-icon{
+        cursor: pointer;
+    }
 }
 
 /* image links hover effects */
 footer a.github:hover {
-    color: darkgray;
+    color: black;
 }
 
-footer a.codepen:hover {
-    color: darkgray;
+footer a.instagram:hover {
+    color: #b4004b;
 }
 
 /* Resposive Footer */
