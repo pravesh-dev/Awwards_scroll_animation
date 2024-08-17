@@ -129,9 +129,6 @@ function startAnimation() {
 
     .to(frames, updateFrame(1260), 'fourteen')
     .to('.panelism', {scale: 2, ease: 'circ',}, 'fourteen')
-
-    // .to(frames, updateFrame(1344), 'fifteen')
-    // .to('.panelism', {scale: 2, ease: 'circ',}, 'fifteen')
 }
 
 preloadImages();
@@ -140,3 +137,15 @@ window.addEventListener("resize", () => {
   loadImages(Math.floor(frames.currentIndex));
 });
 
+document.querySelectorAll('.headings h3')
+.forEach((elm)=>{
+  gsap.from(elm, {
+    scrollTrigger: {
+      trigger: elm,
+      start: 'top 90%',
+      end: 'bottom 20%',
+      scrub: 3,
+    },
+    opacity: 0.1
+  })
+})
