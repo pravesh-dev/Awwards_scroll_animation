@@ -10,3 +10,85 @@
     border-top: 1px solid black;
     padding: 0.8rem 1rem;
 }
+
+/* ======- FOOTER -====== */
+
+footer {
+    padding: 0.5rem;
+    background-color: #dfdfdf;
+    text-align: center;
+}
+
+/* footer text */
+footer div p{
+    font-family: rubik one;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer div p i.red{
+    color: red;
+    size: 24px;
+}
+
+/* footer text effects */
+footer div p span{
+    transition: background-color,color 1500ms ease;
+    background-color: black;
+    color: white;
+}
+
+footer div p span:hover{
+    background-color:white ;
+    color: black;
+}
+
+/* Footer Image Links */
+footer a.github {
+    -webkit-transition:color 500ms ease;
+    -moz-transition:color 500ms ease;
+    -o-transition:color 500ms ease;
+    transition: color 500ms ease;
+    font-size: 3em;
+    color: rgb(13,38,54);
+    padding: 10px;
+    display:inline-block;
+}
+
+footer a.codepen {
+    -webkit-transition:color 500ms ease;
+    -moz-transition:color 500ms ease;
+    -o-transition:color 500ms ease;
+    transition: color 500ms ease;
+    font-size: 3em;
+    color: black;
+    padding: 10px;
+    display:inline-block;
+}
+
+/* image links hover effects */
+footer a.github:hover {
+    color: darkgray;
+}
+
+footer a.codepen:hover {
+    color: darkgray;
+}
+
+/* Resposive Footer */
+footer.mobile {
+    display:none;
+}
+
+@media screen and (max-width: 400px) {
+    footer.pc {
+        display:none;
+    }
+    footer.mobile {
+        display:block;
+    }
+    footer.mobile div p {
+        font-size: 15px;
+    }
+
+}
