@@ -146,6 +146,8 @@ document.querySelectorAll('.headings h3')
       end: 'bottom 50%',
       scrub: 3,
     },
-    opacity: 0.3
+    opacity: 0.3,
+    scale: 0.8,
+    x: 100
   })
 })
