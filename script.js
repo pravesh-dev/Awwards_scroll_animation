@@ -140,15 +140,3 @@ window.addEventListener("resize", () => {
   loadImages(Math.floor(frames.currentIndex));
 });
 
-document.querySelectorAll('.headings h3')
-.forEach((elm)=>{
-  gsap.from(elm, {
-    scrollTrigger: {
-      trigger: elm,
-      start: 'top 90%',
-      end: 'bottom 20%',
-      scrub: 3,
-    },
-    opacity: 0.1
-  })
-})
