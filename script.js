@@ -143,11 +143,11 @@ document.querySelectorAll('.headings h3')
     scrollTrigger: {
       trigger: elm,
       start: 'top 90%',
-      end: 'bottom 50%',
+      end: 'bottom 60%',
       scrub: 3,
     },
     opacity: 0.3,
     scale: 0.8,
-    x: 100
+    x: 50
   })
 })
