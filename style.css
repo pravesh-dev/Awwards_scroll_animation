@@ -20,6 +20,11 @@
     background: #000;
     color: #fff;
 }
+.experienceBtn:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
 
 /* ======- FOOTER -====== */
 
