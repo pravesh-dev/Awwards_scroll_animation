@@ -113,7 +113,7 @@ function startAnimation() {
     .to('.panel', {x: 0, ease: 'expo',}, 'ninth')
 
     .to(frames, updateFrame(840), 'tenth')
-    .to('.panel', {opacity: 0, ease: 'linear',}, 'tenth')
+    .to('.panel', {x: '100%', ease: 'expo',}, 'tenth')
 
     .to(frames, updateFrame(924), 'eleventh')
     .to('canvas', {scale: .5, ease: 'linear',}, 'eleventh')
