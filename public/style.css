@@ -16,10 +16,15 @@
 .getReview, .experienceBtn{
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
     border: 1px solid black;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
 }
 .getReview:hover{
     background: #000;
     color: #fff;
+    gap: 1rem;
 }
 .experienceBtn:hover{
     background: transparent;
